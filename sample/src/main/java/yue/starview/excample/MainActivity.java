@@ -8,6 +8,8 @@ import androidx.viewpager.widget.ViewPager;
 import android.view.View;
 import android.view.View.OnClickListener;
 
+import yue.starview.StarsView;
+
 public class MainActivity extends BaseActivity {
 
 
@@ -17,7 +19,16 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_main);
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+
+        StarsView starsView = findViewById(R.id.star2);
+        starsView.setStarCount(2);
+
+
+
+
+
+
+/*        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
         addFragment(new StarViewFragment(),
                 new StarDrawableFragment(),
@@ -48,7 +59,7 @@ public class MainActivity extends BaseActivity {
             public void onClick(View v) {
 
             }
-        });
+        });*/
 
 }
 
